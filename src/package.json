@@ -1,0 +1,16 @@
+{
+    "name": "src",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel index.html",
+        "build": "parcel build src/*.html --public-url /goit-js-hw-10-food-service/src/"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.5"
+    }
+}
