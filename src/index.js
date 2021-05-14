@@ -24,8 +24,6 @@ function themeToggle(e) {
         return;
     };
 
-    localStoreGetitem(e);
-
 }
 
 function localStoreSetitem(e) {
@@ -42,6 +40,11 @@ function localStoreSetitem(e) {
 }
 
 function localStoreGetitem(e) {
+    if (localStorage.getItem('theme') === 'dark-theme') {
+        themeSwitchToggleRef.checked = true;
+    }
     document.body.classList.add(localStorage.getItem('theme'));
 
 }
+
+localStoreGetitem()
