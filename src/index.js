@@ -10,7 +10,6 @@ themeSwitchToggleRef.addEventListener('input', themeToggle)
 
 function themeToggle(e) {
     if (localStorage.getItem('theme')) {
-        console.log(e.currentTarget.checked);
         if (themeSwitchToggleRef.checked) {
             document.body.classList.remove('light-theme');
             document.body.classList.add('dark-theme');
@@ -30,12 +29,12 @@ function localStoreSetitem(e) {
     if (!e.currentTarget.checked) {
         localStorage.removeItem('theme')
         localStorage.setItem('theme', 'light-theme')
-        console.log(localStorage.getItem('theme'));
+
         return;
     };
     localStorage.removeItem('theme')
     localStorage.setItem('theme', 'dark-theme')
-    console.log(localStorage.getItem('theme'));
+
 
 }
 
