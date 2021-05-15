@@ -39,7 +39,7 @@ function localStoreSetitem(e) {
 
 }
 
-function localStoreGetitem(e) {
+function localStoreGetitem() {
     if (localStorage.getItem('theme') === 'dark-theme') {
         themeSwitchToggleRef.checked = true;
     }
