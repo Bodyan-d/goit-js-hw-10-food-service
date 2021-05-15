@@ -16,13 +16,11 @@ function themeToggle(e) {
             localStoreSetitem(e);
             return;
         };
-
-        document.body.classList.remove('dark-theme');
-        document.body.classList.add('light-theme');
-        localStoreSetitem(e);
-        return;
     };
-
+    document.body.classList.remove('dark-theme');
+    document.body.classList.add('light-theme');
+    localStoreSetitem(e);
+    return;
 }
 
 function localStoreSetitem(e) {
