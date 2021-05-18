@@ -6,6 +6,12 @@ const themeSwitchToggleRef = document.querySelector('.theme-switch__toggle')
 const cardsMurkupRefs = cardsTpl(cardsSettings);
 menuRef.insertAdjacentHTML('beforeend', cardsMurkupRefs);
 
+function localStorageDefolt() {
+    localStorage.setItem('theme', 'light-theme');
+};
+
+localStorageDefolt();
+
 themeSwitchToggleRef.addEventListener('input', themeToggle)
 
 function themeToggle(e) {
